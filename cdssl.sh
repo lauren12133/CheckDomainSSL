@@ -56,7 +56,7 @@ while true; do
   fi
 
   if [ ! -z "$remaining_domains" ]; then
-    message="👍︎👍︎👍︎没有SSL快过期的域名$remaining_domains"
+    message="👍︎👍︎👍︎这些域名没过期$remaining_domains"
     curl -s -X POST $URL -d chat_id=$chat_id -d text="$message" > /dev/null
   fi
 sleep_run
