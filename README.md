@@ -5,23 +5,23 @@
 
 ### 创建文件目录
 ```shell
-mkdir $(pwd)/checkdominssl
+mkdir $(pwd)/checkdomainssl
 ```
 ### 国外环境
 ```shell
-wget https://raw.githubusercontent.com/lauren12133/CheckDominSSL/main/cdssl.sh -O $(pwd)/checkdominssl/cdssl.sh && chmod +x $(pwd)/checkdominssl/cdssl.sh
+wget https://raw.githubusercontent.com/lauren12133/CheckDomainSSL/main/cdssl.sh -O $(pwd)/checkdominssl/cdssl.sh && chmod +x $(pwd)/checkdomainssl/cdssl.sh
 ```
 ### 国内环境
 ```shell
-wget https://ghproxy.com/https://raw.githubusercontent.com/lauren12133/CheckDominSSL/main/cdssl.sh -O $(pwd)/checkdominssl/cdssl.sh && chmod +x $(pwd)/checkdominssl/cdssl.sh
+wget https://ghproxy.com/https://raw.githubusercontent.com/lauren12133/CheckDomainSSL/main/cdssl.sh -O $(pwd)/checkdomainssl/cdssl.sh && chmod +x $(pwd)/checkdominssl/cdssl.sh
 ```
 ### 填写测试端口 添加域名 TGbot等环境变量 
 ```shell
-vi $(pwd)/checkdominssl/cdssl.sh
+vi $(pwd)/checkdomainssl/cdssl.sh
 ```
 ### 运行
 ```shell
-bash $(pwd)/checkdominssl/cdssl.sh
+bash $(pwd)/checkdomainssl/cdssl.sh
 ```
 
 ## Docker
