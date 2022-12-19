@@ -44,9 +44,9 @@ while true; do
     days_remaining=$(( (expiration_timestamp - current_timestamp) / 86400 ))
 
     if [ $days_remaining -lt $threshold ]; then
-      expired_domains="$expired_domains $domain"
+      expired_domains="$expired_domains $domain(有效期剩余：$days_remaining天)"
     else
-      remaining_domains="$remaining_domains $domain ($days_remaining 剩余有效时长)"
+      remaining_domains="$remaining_domains $domain (有效期剩余：$days_remaining天)"
     fi
   done
 
