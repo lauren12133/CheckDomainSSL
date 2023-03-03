@@ -15,9 +15,9 @@ URL=https://thingproxy.freeboard.io/fetch/https://api.telegram.org/bot$api_key/s
 while true; do 
   temp=$(cat /sys/class/thermal/thermal_zone0/temp)/1000 
   if [ "$temp" -gt 60.0 ]; then
-    curl -X POST $URL -d chat_id=$chat_id --data '{"text":"当前温度过高: $temp°"}' > /dev/null
+    curl -X POST $URL -d chat_id=$chat_id -d text="💀💀💀Pine64当前温度过高: $temp°💀💀💀" > /dev/null
   else
-    curl -X POST $URL -d chat_id=$chat_id --data '{"text":"当前温度: $temp°"}' > /dev/null
+    curl -X POST $URL -d chat_id=$chat_id -d'{"👍︎👍︎👍︎text":"当前温度: $temp°👍︎👍︎👍︎"}' > /dev/null
   fi 
   sleep_run
 done
