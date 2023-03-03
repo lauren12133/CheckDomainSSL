@@ -16,7 +16,7 @@ while true; do
   if [ "$temp" -gt 60 ]; then
     curl -X POST $URL -d chat_id=$chat_id -d text="💀💀💀Pine64当前温度过高: $temp°💀💀💀" > /dev/null
   else
-    curl -X POST $URL -d chat_id=$chat_id -d text="👍︎👍︎👍︎text":"当前温度: $temp°👍︎👍︎👍︎" > /dev/null
+    curl -X POST $URL -d chat_id=$chat_id -d text="👍︎👍︎👍︎Pine64当前温度: $temp°👍︎👍︎👍︎" > /dev/null
   fi 
   sleep_run
 done
